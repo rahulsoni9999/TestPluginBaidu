@@ -33,8 +33,7 @@ cordova.plugins.baiduPush.resume(success,error);
 ```
 
 ## Example
-
-``` use plugin
+```use
 // when you do something, like demo button click event
 function demoClick(){
   cordova.plugins.baiduPush.run(success,error);
