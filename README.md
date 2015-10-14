@@ -30,6 +30,9 @@ cordova.plugins.baiduPush.resume(success,error);
  3.when onNotificationClicked, i trigger the boradcast "onNotificationClicked".(当点击消息，触发onNotificationClicked，回调js方法)
 
  4.when onMessage, i write two function -- the app run in front or run in background.when it run in front,default. when it run in background, i will make a notify to display message,make it looks like "onNotificationArrived".(当使用透传传递消息时，此处有两种走向，应用运行在前台，则默认透传，运行在后台，则自己定义一个消息，让它看起来像是非透传的消息)
+ 
+// libs 
+you should put "libs" into "platforms/android/libs".(你应该把lib放在"platforms/android/libs"下面，此为百度云推送引用的包)
 ```
 
 ## Example
