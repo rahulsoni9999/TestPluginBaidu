@@ -1,6 +1,14 @@
 ## baiduPush-android
 cordova(ionic/phonegap) plugin: "com.xishiyi7.baidupush"
-
+###### plugin desc(插件功能描述)
+ * 在js端使用run方法，可以实现js调用android native，同时可以启动baidu push各个接口的广播监听；
+ * 在js端使用start方法，可以实现js端启动baidu push绑定服务，如果success，则触发baidu push bind广播，回调js中的bind方法，你可以在bind方法中添加具体操作；
+ * 如果bind已成功，当有消息到达时，会触发onNotificationArrived中的广播，此时回调js中的sendPushResult方法，你可以在sendPushResult方法中添加具体操作；
+ * 如果点击消息，会触发onNotificationClicked中的广播，此时回调js中的sendBackgroundPushResult方法，你可以在sendBackgroundPushResult方法中添加具体操作；
+ * 以上js回调都支持参数传递
+ * 以上广播监听也都支持参数传递
+ 
+ 
 ## Usage
 the plugin exposes the following method:
 
